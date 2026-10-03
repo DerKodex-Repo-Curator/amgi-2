@@ -5,7 +5,7 @@
 
 #if os(iOS)
 enum AppIconOption: CaseIterable, Identifiable {
-    case standard, dojang, deepTeal, midnight, celadon, persimmon
+    case standard, handwritten, deepTeal, midnight, celadon, persimmon
 
     var id: Self { self }
 
@@ -15,8 +15,8 @@ enum AppIconOption: CaseIterable, Identifiable {
 
     var previewName: String {
         switch self {
-        case .standard: "DefaultIcon"
-        case .dojang: "Dojang"
+        case .standard: "Dojang"
+        case .handwritten: "Handwritten"
         case .deepTeal: "DeepTeal"
         case .midnight: "Midnight"
         case .celadon: "Celadon"
@@ -26,8 +26,8 @@ enum AppIconOption: CaseIterable, Identifiable {
 
     var displayName: String {
         switch self {
-        case .standard: "Default"
-        case .dojang: "Dojang"
+        case .standard: "Dojang"
+        case .handwritten: "Handwritten"
         case .deepTeal: "Deep Teal"
         case .midnight: "Midnight"
         case .celadon: "Celadon"
